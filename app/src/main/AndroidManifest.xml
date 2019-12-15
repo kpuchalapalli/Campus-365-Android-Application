@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.campus_365"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:name=".context.ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_campus365"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_campus365"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Admin.ViewFacultyActivity"></activity>
+        <activity android:name=".Student.ViewAttendanceByStudentActivity" />
+        <activity android:name=".Student.ViewAttendance" />
+        <activity android:name=".Teacher.ViewAttendanceByFacultyActivit\y" />
+        <activity android:name=".Admin.AdminDashReport" />
+        <activity android:name=".Teacher.Attendance" />
+        <activity android:name=".Teacher.DisplayStudents" />
+        <activity android:name=".Admin.AdminDashTeacher" />
+        <activity android:name=".Admin.AdminDashStudent" />
+        <activity android:name=".Admin.AdminTeacherRegistration" />
+        <activity android:name=".Admin.AdminStudentRegistration" />
+        <activity android:name=".Teacher.TeacherDashboard" />
+        <activity android:name=".Student.StudentDashboard" />
+        <activity android:name=".Admin.AdminDashboard" />
+        <activity android:name=".Admin.AdminLogin" />
+        <activity android:name=".Teacher.TeacherLogin" />
+        <activity android:name=".Student.StudentLogin" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Teacher.AddAttendance" />
+        <activity android:name=".Teacher.ViewStudentByBranchYear" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

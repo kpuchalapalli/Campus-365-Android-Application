@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcome_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="casual"
+            android:text="Welcome to Campus-365"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_stud"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/welcome_txt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pic_stud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/learn"/>
+
+                <TextView
+                    android:id="@+id/txt_studHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/pic_stud"
+                    android:text="Student Login"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="casual"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/txt_stud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pic_stud"
+                    android:layout_below="@id/txt_studHeader"
+                    android:layout_alignLeft="@id/txt_studHeader"
+                    android:text="View Time Table, Check Marks, Upload Assignments and More "/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_teach"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/card_stud"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pic_teach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/teacher"/>
+
+                <TextView
+                    android:id="@+id/txt_teachHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/pic_teach"
+                    android:text="Teacher Login"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="casual"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/txt_teach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pic_teach"
+                    android:layout_below="@id/txt_teachHeader"
+                    android:layout_alignLeft="@id/txt_teachHeader"
+                    android:text="Make Time Table, Manage Marks/Attendance Upload Assignments and More "/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_admin"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/card_teach"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pic_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/admin"/>
+
+                <TextView
+                    android:id="@+id/txt_adminHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/pic_admin"
+                    android:text="Admin Login"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="casual"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/txt_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pic_admin"
+                    android:layout_below="@id/txt_adminHeader"
+                    android:layout_alignLeft="@id/txt_adminHeader"
+                    android:text="Manage Student, Teacher and Administrative information"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_info"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/card_admin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/pic_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:id="@+id/txt_infoHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/pic_info"
+                    android:fontFamily="casual"
+                    android:text="More Info"
+                    android:textAlignment="viewStart"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txt_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_infoHeader"
+                    android:layout_alignLeft="@id/txt_infoHeader"
+                    android:layout_toRightOf="@+id/pic_info"
+                    android:text="More Information About the App" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

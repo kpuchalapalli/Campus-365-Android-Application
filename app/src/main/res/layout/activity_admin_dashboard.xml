@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminDashboard"
+    android:background="@drawable/dash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dash_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/dash_admin"/>
+
+        <TextView
+            android:id="@+id/dash_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN DASHBOARD"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dashStud"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/dash_header"
+            android:layout_marginLeft="30dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_dashStud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dash_stud"/>
+
+                <TextView
+                    android:id="@+id/txt_dashStud"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/icon_dashStud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Students"/>
+
+                <View
+                    android:layout_marginTop="25dp"
+                    android:layout_width="125dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/icon_dashStud"
+                    android:background="#D3D3D3"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/icon_dashStud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:text="Add, Delete, Update Student Information"
+                    android:padding="10dp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dashTeach"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/dash_header"
+            android:elevation="10dp"
+            android:layout_toRightOf="@id/card_dashStud"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_dashTeach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dash_teachers"/>
+
+                <TextView
+                    android:id="@+id/txt_dashTeach"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/icon_dashTeach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teachers"/>
+
+                <View
+                    android:layout_marginTop="25dp"
+                    android:layout_width="125dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/icon_dashTeach"
+                    android:background="#D3D3D3"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/icon_dashTeach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:text="Add, Delete, Update Teacher Information"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dashReport"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/card_dashStud"
+            android:layout_alignLeft="@id/card_dashStud"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_dashReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dash_reports"/>
+
+                <TextView
+                    android:id="@+id/txt_dashReport"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/icon_dashReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reports"/>
+
+                <View
+                    android:layout_marginTop="25dp"
+                    android:layout_width="125dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/icon_dashReport"
+                    android:background="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_dashReport"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:text="View Attendance and marks"
+                    android:textAlignment="center" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dashLogout"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/card_dashTeach"
+            android:layout_alignRight="@id/card_dashTeach"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_dashLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dash_logout"/>
+
+                <TextView
+                    android:id="@+id/txt_dashLogout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/icon_dashLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"/>
+
+                <View
+                    android:layout_marginTop="25dp"
+                    android:layout_width="125dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/icon_dashLogout"
+                    android:background="#D3D3D3"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/icon_dashLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:text="Sign out and Exit Dashboard"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
